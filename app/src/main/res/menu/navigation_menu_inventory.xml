@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/inventoryTempList"
+            android:icon="@drawable/ic_scan"
+            android:title="@string/temp_list" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_middle"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/inventoryOverview"
+            android:icon="@drawable/ic_preview"
+            android:title="@string/inventory_overview" />
+    </group>
+
+    <group
+        android:id="@+id/menu_end"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/inventorySend"
+            android:icon="@drawable/ic_send"
+            android:title="@string/inventory_send" />
+
+    </group>
+</menu>

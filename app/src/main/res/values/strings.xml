@@ -1,0 +1,369 @@
+<resources>
+    <string name="app_name">Kolibri WMS</string>
+
+
+    //POTREBNO ZA RAD SA ZEBROM PDA
+    <string name="activity_intent_filter_action">com.microbs.ACTION</string>
+    <string name="datawedge_intent_key_source">com.symbol.datawedge.source</string>
+    <string name="datawedge_intent_key_label_type">com.symbol.datawedge.label_type</string>
+    <string name="datawedge_intent_key_data">com.symbol.datawedge.data_string</string>
+    <string name="change_theme">Izaberi tamnu temu</string>
+    <string name="login">Logovanje</string>
+    <string name="username">Korisničko ime</string>
+    <string name="password">Šifra</string>
+
+
+    //DIALOG Titles and Messages
+    <string name="attention">PAŽNJA</string>
+    <string name="error">GREŠKA</string>
+    <string name="warning">UPOZORENJE</string>
+    <string name="error_string">GREŠKA:\n%1$s</string>
+    <string name="system_error">SISTEMSKA GREŠKA</string>
+    <string name="system_error_happened">Desila se sistemska greška, bicete odjavljeni sa sistema. Da li želite da pošaljete email administratoru sa greškom?!</string>
+    <string name="send_error">Da li želite da pošaljete email administratoru sa greškama?!</string>
+    <string name="no_internet_msg">Nemate internet konekciju. Ne možete nastaviti sa radom bez internet konekcije!</string>
+    <string name="please_wait">Molimo sačekajte...</string>
+
+    //MainActivity
+    <string name="error_message">Niste uneli dobre vrednosti</string>
+    <string name="login_lbl">PRIJAVA</string>
+    <string name="login_error">Greška prilikom prijave!</string>
+    <string name="data_sync">Sinhronizacija podataka...</string>
+    <string name="error_login_try_again">Neuspešna prijava, pokušajte ponovo!</string>
+    <string name="no_licence_error">Uredjaj nije licenciran!</string>
+    <string name="check_internet">Proverite internet konekciju!</string>
+    <string name="successString">Preuzeti podaci!!!</string>
+    <string name="error_happened">Došlo je do greške!!!</string>
+    <string name="error_happened_main">Upozorenje!!!</string>
+    <string name="no_device_no">Serijski broj uređaja ne postoji. Ne možete nastaviti sa radom. Kontaktirajte administratora.</string>
+    <string name="server_communication_error">"Greška pri komunikaciji sa serverom. GREŠKA:\n%1$s"</string>
+    <string name="error_login">Došlo je do greške pri loginu. Pokušajte ponovo!</string>
+    <string name="error_employee_insert">Greška pruloilikom inserta zaposlenog u lokalnu bazu. Pokušajte ponovo!</string>
+    <string name="error_getting_emp_from_fb">Greška pri dobijanju zaposlenog sa Firebase-a. Pokušakte ponovo!</string>
+    <string name="already_logged_another_device">Već ste ulogovani na drugom uredjaju!</string>
+    <string name="firebase_emp_parse_error">Greška pri parsiranju objekta zaposlenog. Pokušajte ponovo!</string>
+    <string name="firebase_emp_insert_error">Greška pri insertu zaposlegon na Firebase. Pokušajte ponovo!</string>
+    <string name="sync_started">Započeta sinhronizacija...</string>
+    <string name="sync_error_app_version">Došlo je do greške pri sinhronizaciji verzije aplikacije</string>
+    <string name="sync_error_ramp">Došlo je do greške pri sinhronizaciji rampi</string>
+    <string name="sync_error_product_category">Došlo je do greške pri sinhronizaciji grupa proizvoda</string>
+    <string name="sync_error_product">Došlo je do greške pri sinhronizaciji proizvoda</string>
+    <string name="sync_error_truck">Došlo je do greške pri sinhronizaciji kamiona</string>
+    <string name="sync_error_product_box">Došlo je do greške pri sinhronizaciji kutija proizvoda</string>
+    <string name="sync_error_product_item">Došlo je do greške pri sinhronizaciji tipova proizvoda</string>
+    <string name="sync_error_return_reason">Došlo je do greške pri sinhronizaciji razloga za povrat</string>
+    <string name="sync_error_incoming_type">Došlo je do greške pri sinhronizaciji tipova prijema</string>
+    <string name="sync_error_incoming_production_type">Došlo je do greške pri sinhronizaciji tipova prijema iz proizvodnje</string>
+    <string name="sync_error_partner">Došlo je do greške pri sinhronizaciji partnera</string>
+    <string name="sync_error_warehouse">Došlo je do greške pri sinhronizaciji magacina</string>
+    <string name="sync_error_object">Došlo je do greške pri sinhronizaciji objekta za magacine</string>
+    <string name="sync_error_w_pos">Došlo je do greške pri sinhronizaciji pozicija za magacine</string>
+    <string name="sync_error_w_sub_pos">Došlo je do greške pri sinhronizaciji podpozicija za magacine</string>
+    <string name="sync_error_outgoing_type">Došlo je do greške pri sinhronizaciji tipova otpreme</string>
+    <string name="sync_finished">Završena Sinhronizacija</string>
+    <string name="data_not_sent">Nisu poslati sledeći podaci: \n</string>
+    <string name="data_not_sync">GREŠKA:\n%1$s\nNisu sinhronizovani podaci: \n</string>
+    <string name="try_sync_again_prompt">\n Da li želite opet da pokušate sinhronizaciju podataka?</string>
+    <string name="sync_mandatory_lbl">Greška pri sinhronizaciji! Sinhronizacija je obavezna!</string>
+    <string name="new_version_warning">Na serveru postoji nova verzija aplikacije!</string>
+    <string name="download_version_prompt">Preuzmi novu verziju?</string>
+    <string name="all_data_not_sent">Nisu poslati svi podaci na server!</string>
+    <string name="succes_login">Provera završena</string>
+
+
+    //DashboardActivity
+    <string name="incoming">PRIJEM</string>
+    <string name="incoming_sub">Lista aktivnih prijema</string>
+    <string name="outcoming">OTPREMA</string>
+    <string name="outcoming_sub">Lista aktivnih otprema</string>
+    <string name="repacking">PREPAKIVANJE</string>
+    <string name="repacking_desc">Prepakivanje robe na pozicijama</string>
+    <string name="logout_prompt">Da li želite da se izlogujete?</string>
+    <string name="logout_success">Uspešan logout!</string>
+    <string name="logout_error">Došlo je do greške pri logoutu! Proverite internet konekciju i pokušajte opet. GREŠKA:\n%1$s</string>
+    <string name="inventory">POPIS</string>
+    <string name="inventory_desc">Popis atikala u skladištu</string>
+
+    //IncomingActivity
+    <string name="large_prod_lbl">Br. veliki artikli: </string>
+    <string name="small_prod_lbl">Br. mali artikli:</string>
+    <string name="cancel">ODUSTANI</string>
+    <string name="choose">POTVRDI</string>
+
+
+    //IncomingAdapter
+    <string name="document_date">"Datum dokumenta: %1$s"</string>
+    <string name="active">Aktivan</string>
+    <string name="finished_partially">Završeno delimično</string>
+    <string name="finished">Završeno potpuno</string>
+    <string name="finished_with_surplus">Završeno sa viškom</string>
+    <string name="returned">Vraćeno</string>
+    <string name="sent_to_erp">Poslato u ERP</string>
+    <string name="declined">Otkazano</string>
+    <string name="code">Šifra: %1$s</string>
+    <string name="transport_no">Transport: %1$s</string>
+    <string name="type">Tip: %1$s</string>
+    <string name="status">Status: %1$s</string>
+    <string name="date">Datum: %1$s</string>
+    <string name="partner">Partner: %1$s</string>
+    <string name="address">Adresa: %1$s</string>
+    <string name="warehouse">Skladište: %1$s</string>
+    <string name="date_lbl">DATUM</string>
+    <string name="filter">Filter</string>
+    <string name="set_date_to">Odaberite datum do</string>
+    <string name="no_incoming_for_period">Ne postoje prijemi za odabrane filtere.\nOdaberite drugi datum ili promenite filtere.</string>
+    <string name="incoming_sync_error">Došlo je do greške pri dobavljanju prijema sa Firebase servera. Pokušajte ponovo!</string>
+    <string name="incoming_type_lbl">Tip prijema</string>
+    <string name="incoming_code">Šifra prijema</string>
+    <string name="partner_lbl">Partner</string>
+    <string name="city_lbl">Grad</string>
+
+    //SingleIncomingActivity
+    <string name="current_incoming_null_error">Došlo je do greške pri očitavanju odabranog prijema. Pokušajte opet.</string>
+    <string name="current_outgoing_null_error">Došlo je do greške pri očitavanju odabrane otpreme. Pokušajte opet.</string>
+    <string name="incoming_code_short">"ŠIF: %1$s"</string>
+    <string name="incoming_expected_date">"Očekivani datum prijema: %1$s"</string>
+    <string name="partner_name_and_address">%1$s (%2$s) </string>
+
+
+    //SingleincomingDefaultFragment
+    <string name="scanning_error">Došlo je do greške pri skeniranju. GREŠKA:\n%1$s</string>
+    <string name="selectedProducts">UKUPNO SKENIRANO ARTIKALA</string>
+    <string name="selectedProductsShort">SKENIRANO ART.</string>
+    <string name="small_product">IZABRANO MALIH</string>
+    <string name="big_product">IZABRANO VELIKIH</string>
+    <string name="btn_position">POSTAVI</string>
+    <string name="position_hint">POZICIJA</string>
+    <string name="no_temporary_product">TRENUTNO NEMATE NIJEDAN ARTIKAL U PRIVREMENOJ LISTI</string>
+    <string name="empty_serials">NEMA DEFINISANIH SERIJSKIH BROJEVA ZA OVAJ PRIJEM</string>
+    <string name="add_product">DODAJ</string>
+    <string name="serial_number_hint">SERIJSKI BROJ</string>
+    <string name="truck_driver">VOZAČ</string>
+    <string name="licence_plate">REGISTRACIJA</string>
+    <string name="add_prod_no_sr_num">Dodaj bez sr.br.</string>
+    <string name="sr_number_hint">SERIJSKI BROJ</string>
+    <string name="error_loading_current_outgoing_leave">Postoji greška sa trenutno odabranom otpremom. Izađite iz forme pa pokusajte ponovo.</string>
+    <string name="error_loading_current_incoming_leave">Postoji greška sa trenutno odabranim prijemom. Izađite iz forme pa pokusajte ponovo.</string>
+    <string name="articles_added_on_pos">Uspešno ste postavili artikle na poziciju!</string>
+    <string name="counter_numbers">%1$d/%2$d</string>
+    <string name="total_num_of_prod">Ukupno artikala: %1$d</string>
+    <string name="total_num_of_inc">Ukupno prijema: %1$d</string>
+    <string name="total_num_of_outgoing">Ukupno otprema: %1$d</string>
+    <string name="pos_must_have_num_char">Barkod pozicije mora sadržati %1$d cifre</string>
+    <string name="pos_barcode_not_set">Niste uneli barkod pozicije</string>
+
+    //SingleIncomingViewModel
+    <string name="product_not_selected_from_list">Niste odabrali proizvod iz liste!</string>
+    <string name="qty_bad_format">Uneta neispravna vrednost za količinu!</string>
+    <string name="qty_must_be_over_zero">Morate uneti količinu veću od 0!</string>
+    <string name="qty_not_inserted">Niste uneli količinu!</string>
+    <string name="sr_num_mandatory">Morate uneti serijski broj ili kliknite na dugme \"DODAJ BEZ SR.BR.\"</string>
+    <string name="no_such_inc_on_fb">Odabrani prijem ne postoji na Firebase serveru. Kontaktirajte administratora.</string>
+    <string name="added_qty_greater_than_defined">Količina na prijemu: %1$d\nUkupno dodata kol: %2$d\nDa li ipak želite da dodate?</string>
+    <string name="delete_scanned_product_prompt">Da li želite da obrišete sve artikle koje ste skenirali/dodali?</string>
+    <string name="error_deleting_all_from_temp_list">Došlo je do greške prilikom brisanju svih skeniranih/dodatih artikala. Pokušajte ponovo.</string>
+    <string name="error_deleting_last_from_temp_list">Došlo je do greške prilikom brisanju poslednjeg skeniranog/dodatog artikla. Pokušajte ponovo.</string>
+    <string name="leave_at_pos">Ostavi na poziciji</string>
+    <string name="reserved">REZ</string>
+    <string name="wrong_barcode">Neispravan barkod. Skenirajte opet.</string>
+    <string name="pos_not_exist">Ova pozicija ne postoji u sistemu ili nije definisana kao pozicija za prijem!</string>
+    <string name="no_added_prods">Niste skenirali nikakve artikle još uvek</string>
+    <string name="pos_not_defined_for_incoming">Ova pozicija nije definisana kao pozicija za prijem!</string>
+    <string name="added_and_expected_qty">%1$d/%2$d</string>
+    <string name="scanned_prod_box_not_exist">Skenirani proizvod ne postoji u sistemu ili je neaktivan</string>
+    <string name="scanned_prod_box_not_on_inc">Skenirani proizvod se ne nalazi na trenutnom prijemu.</string>
+    <string name="truck_not_selected">NIJE UNET KAMION</string>
+    <string name="transport">Prevoz</string>
+    <string name="incoming_not_all_boxes_synced">Niste sinhronizovali sve artikle koji se nalaze na ovom prijemu. Neki od artikla neće biti vidljivi. Ponovite Login kako biste pokupili sveže podatke.</string>
+    <string name="outgoing_not_all_boxes_synced">Niste sinhronizovali sve artikle koji se nalaze na ovoj otpremi. Neki od artikla neće biti vidljivi. Ponovite Login kako biste pokupili sveže podatke.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="truck_selected">KAMION UNET</string>
+    <string name="driver_not_inserted">Niste uneli vozaća</string>
+    <string name="licence_plate_not_inserted">Niste uneli registarki broj</string>
+    <string name="licence_plate_already_added">Kamion sa ovim registarskim brojem je već dodat!</string>
+    <string name="truck_added">Kamion dodat</string>
+    <string name="truck_removed">Kamion obrisan</string>
+    <string name="incoming_overview">Pregled prijema</string>
+    <string name="left">Preostalo</string>
+    <string name="done">Završeno</string>
+    <string name="no_added_prods_on_fb">Niste postavili nikakve artikle sa trenutnog prijema na poziciju...</string>
+    <string name="product_code_and_name">%1$s - %2$s</string>
+    <string name="sr_number">SR.BROJ: %1$s</string>
+    <string name="quantity_res">Kol: %1$d %2$s</string>
+    <string name="position">Pos: %1$s</string>
+    <string name="product_removed">Proizvod obrisan</string>
+    <string name="res_lbl">- rezervisano</string>
+    <string name="temp_list">Trenutna lista</string>
+    <string name="error_deleting_prod_from_temp_list">Došlo je do greške prilikom brisanju skeniranog/dodatog artikla. Pokušajte ponovo.</string>
+    <string name="no_transport_added">Niste dodali ni jedan kamion još uvek...</string>
+    <string name="notice">Obaveštenje</string>
+    <string name="incoming_finished_send_prompt">Prijem je završen. Da li želite da ga pošaljete?</string>
+    <string name="outgoing_finished_send_prompt">Otprema je završena. Da li želite da je pošaljete?</string>
+    <string name="incoming_production">PRIJEM IZ PROIZVODNJE</string>
+    <string name="incoming_production_sub">Lista aktivnih prijema iz proizvodnje</string>
+    <string name="incoming_production_lbl">Prijem - proizvodnja</string>
+    <string name="choose_production_type">Odaberite tip proizvodnje</string>
+    <string name="incoming_production_fb_error">"OnEvent() Firebase greška : %1$s"</string>
+    <string name="outgoing_grouped_fb_error">"OutgoingID : %1$s\nFirebase greška : %2$s"</string>
+    <string name="no_such_inc_in_hash">Prijem ne postoji u firebase bazi. Napustite formu i odradite skeniranje opet.</string>
+    <string name="no_such_out_in_hash">Otprema ne postoji u firebase bazi. Napustite formu i odradite skeniranje opet.</string>
+    <string name="no_such_prod_on_current_inc">Dodati proizvod se ne nalazi ni na jednom prijemu. Napustite formu i skenirajte opet.</string>
+    <string name="no_such_prod_on_current_out">Dodati proizvod se ne nalazi ni na jednoj otpremi. Napustite formu i skenirajte opet.</string>
+    <string name="clone_error">Došlo je do greške pri kloniranju objekta. Napustite formu i skenirajte opet.</string>
+    <string name="incoming_lbl">Prijem: %1$s</string>
+    <string name="matis_production_lbl">Proizvodnja Matis</string>
+    <string name="incoming_not_exist_on_status_update">Greška prilikom update-a statusa grupnog prijema. Napustite formu i pokušajte opet.</string>
+    <string name="error_sending_single_incoming">Greška prilikom slanja pojedinačnog prijema na server. Greška: %1$s</string>
+    <string name="error_sending_single_outgoing">Greška prilikom slanja pojedinačne otpreme na server. Greška: %1$s</string>
+    <string name="incoming_sent_successfully">Prijem uspešno poslat!</string>
+    <string name="outgoing_sent_successfully">Otprema uspešno poslata!</string>
+    <string name="send_incoming">Pošalji prijem</string>
+    <string name="incoming_not_finished_send_prompt">Prijem nije završen! Da li želite da pošaljete?</string>
+    <string name="outgoing_not_finished_send_prompt">Otprema nije završena! Da li želite da pošaljete?</string>
+    <string name="no_inc_to_be_sent">Ne postoje prijemi koji su za slanje...</string>
+    <string name="no_out_to_be_sent">Ne postoje otpreme koje su za slanje...</string>
+    <string name="incomings_finished_send_prompt">"Da li želite da pošaljete završene prijeme? "</string>
+    <string name="firestore_in_limit_reached">Ukupan broj naloga koje možete poslati odjednom je %1$d!\nTrenutno naloga za slanje: %2$d\nPošaljite neke od naloga pojedinačno!</string>
+    <string name="error_sending_all_incoming">Greška prilikom slanja svih završenih prijema na server. Greška: %1$s</string>
+    <string name="error_sending_all_outgoing">Greška prilikom slanja svih završenih otprema na server. Greška: %1$s</string>
+    <string name="all_incoming_sent_successfully">Prijemi uspešno poslati!</string>
+    <string name="send_incomings">Pošalji prijeme</string>
+    <string name="incomings_send_prompt">Da li želite da pošaljete prijeme?</string>
+    <string name="outgoings_send_prompt">Da li želite da pošaljete otpreme?</string>
+    <string name="incoming_deleted_error">Trenutni prijem je obrisan od strane administratora. Napustite formu.</string>
+    <string name="incoming_canceled_error">Trenutni prijem je otkazan od strane administratora. Napustite formu.</string>
+    <string name="outgoing_canceled_error">Trenutna otprema je otkazana od strane administratora. Napustite formu.</string>
+    <string name="phase_one">Faza 1</string>
+    <string name="phase">FAZA</string>
+    <string name="outgoing_code">Šifra otpreme</string>
+    <string-array name="incoming_style">
+        <item>Pojedinačni prijem</item>
+        <item>Grupni prijem</item>
+    </string-array>
+    <string-array name="outgoing_style">
+        <item>Pojedinačna otprema</item>
+        <item>Grupna otprema</item>
+    </string-array>
+    <string name="outgoing_sync_error">Došlo je do greške pri dobavljanju otpreme sa Firebase servera. Pokušajte ponovo!</string>
+    <string name="products_lbl">ARTIKLI</string>
+    <string name="incomings_lbl">PRIJEMI</string>
+    <string name="outgoings_lbl">OTPREME</string>
+    <string name="period">Period: %1$s</string>
+    <string name="up_to_date">Do datuma: %1$s</string>
+    <string name="no_prod_in_local_db">Ne postoje artikli u lokalnoj bazi koji se nalaze na ovim otpremama. Kontaktiraje administratora</string>
+    <string name="no_prod_in_local_db_for_this_inc">Ne postoje artikli u lokalnoj bazi koji se nalaze na ovim prijemima. Kontaktiraje administratora</string>
+    <string name="outgoing_grouped_lbl">GRUPNA OTPREMA</string>
+    <string name="incoming_grouped_lbl">GRUPNI PRIJEM</string>
+    <string name="outgoing_phase_one">Otprema FAZA 1</string>
+    <string name="outgoing_phase_two">Otprema FAZA 2</string>
+    <string name="position_for_preloading_lbl">Pozicija za predutovar</string>
+    <string name="outgoing_preview">Pregled otpreme</string>
+    <string name="packet_number">Broj paketa: </string>
+    <string name="singleProduct">Pojedinačno</string>
+    <string name="packetProduct">Paketno</string>
+    <string name="position_preloading_hint">POZICIJA PREDUTOVAR</string>
+    <string name="no_outgoing_for_employee">Ne postoje definisane otpreme za trenutnog zaposlenog!</string>
+    <string name="temp_list_not_empty_prompt">Postoje artikli koji su skenirani, ali nisu postavljeni na poziciju za predutovar. Ukoliko napustite formu biće obrisani.\nDa li želite da napustite formu?</string>
+    <string name="no_outgoing_for_period">Ne postoje otpreme za odabrane filtere.\nOdaberite drugi datum ili promenite filtere.</string>
+    <string name="outgoing_deleted_error">Trenutna otprema je obrisana od strane administratora. Napustite formu.</string>
+    <string name="pos_not_defined_for_outgoing">Ova pozicija nije definisana kao pozicija za otpremu!</string>
+    <string name="field_only_for_with_articles_pos">Odabrano polje je samo za unos pozicija koje nisu za predutovar.</string>
+    <string name="field_only_for_preloading_pos">Odabrano polje je samo za unos pozicija koje su za predutovar.</string>
+    <string name="pos_locked_error">Ova pozicija je zaključana od strane drugog korisnika. Sačekajte da korisnik postavi artikle na poziciju kako bi se ova pozicija otključala!</string>
+    <string name="no_article_on_pos">Ne postoje artikli na ovoj poziciji!</string>
+    <string name="no_article_on_pos_on_current_outgoing">Ne ovoj poziciji ne postoje artikli koji su definisani ovom otpremom!</string>
+    <string name="error_mapping_product_boxes">Došlo je do greške pri obradi podataka za kutije proizvoda. Napistite formu i pokušajte ponovo.</string>
+    <string name="error_creating_wrapper_map">Došlo je do greške kod mapiranja pozicija. Napustite formu a zatim pokušajte opet.</string>
+    <string name="position_not_picked">Niste odabrali poziciju! Prvo skenirajte/unsite poziciju zatim artikle!</string>
+    <string name="pos_must_have_num_of_chars">Barkod pozicije mora sadržati %1$d cifre</string>
+    <string name="pos_not_exist_or_not_for_outgoing">Ova pozicija ne postoji u sistemu ili nije definisana kao pozicija za otpremu!</string>
+    <string name="added_qty_greater_than_expected">Ukupna uneta količina za artikal premašuje dostupnu količinu artikla na trenutnoj poziciji!\nKoličina na poz: %1$d\nUkupno dodata kol: %2$d</string>
+    <string name="added_qty_greater_than_expected_on_outgoing">Ukupna uneta količina za artikal premašuje definisanu količinu na trenutnoj otpremi!\nDefinisana količina: %1$d\nUkupno dodata količina: %2$d</string>
+    <string name="sr_num_not_exist_on_pos">Artikal sa ovim serijskim brojem ne postoji na odabranoj poziciji!</string>
+    <string name="scanned_prod_box_not_on_outgoing">Skenirani proizvod se ne nalazi na trenutnoj otpremi.</string>
+    <string name="set">POSTAVI</string>
+    <string name="delete">OBRIŠI</string>
+    <string name="error_preloading_list_not_exist_leave">Došlo je do problema. Lista artikla na poziciji za predutovar ne postoji. Napustite formu a zatim pokušajte da odradite skeniranja od početka.</string>
+    <string name="preloading_pos_not_exist_on_fb">Došlo je do problema pri očitavanju pozicije za predutovar sa Firebase servera. Pozicija sa barkodom %1$s ne postoji na Firebase serveru. Pokušajte da skenirate istu poziciju opet!</string>
+    <string name="error_wrapper_list_not_exist_leave">Došlo je do problema. Wrapper lista ne postoji. Napustite formu a zatim pokušajte da odradite skeniranja od početka.</string>
+    <string name="error_list_in_wrapper_not_exist_leave">Došlo je do problema. Lista u wrapper mapi ne postoji. Napustite formu a zatim pokušajte da odradite skeniranja od početka.</string>
+    <string name="error_prod_from_temp_not_exist_on_pos_leave">Došlo je do problema. Artikal iz skenirane liste ne postoji na poziciji. Napustite formu a zatim pokušajte da odradite skeniranja od početka.</string>
+    <string name="product_moved_successfully">Proizvodi uspešno postavljeni na poziciju za predutovar!</string>
+    <string name="product_loaded_successfully">Proizvodi uspešno utovareni!</string>
+    <string name="no_preloading_prods">Na pozicijama za predutovar ne postoje artikli</string>
+    <string name="quantity_lbl">KOL: %1$d</string>
+    <string name="position_lbl">"POZICIJA: %1$s"</string>
+    <string name="preloading_positions_not_loaded_yet">Podaci sa pozicija za predutovar se još uvek nisu preuzeli. Pokušajte ponovo kasnije!</string>
+    <string name="reserved_quantity_prompt">Na pozicije postoji rezervisana količina za ovaj artikal.\nNa poziciji količina: %1$d\nRezervisana količina: %2$d\nUkupna količina za dodavanje: %3$d\nDa li ipak želite da dodate unetu količinu?</string>
+    <string name="outgoing_overview">Pregled otpreme</string>
+    <string name="send_outgoing">Pošalji otpremu</string>
+    <string name="load">UTOVARI</string>
+    <string name="no_incomings_for_prod_type">Ne postoje prijemi iz proizvodnje sa šifrom %1$s\nNapustite formu.</string>
+    <string name="error_deleting_prod_from_fb">Došlo je do greške prilikom brisanja artikla sa Firebase-a. Pokušajte ponovo.</string>
+    <string name="product_deleted_successfully">Proizvod uspešno obrisan!</string>
+    <string name="invalid_firestore">Projekat gađa pogrešnu firestore bazu. Kontaktirajte administratora!</string>
+    <string name="mail_subject">GREŠKA SA MATIS WMS ANDROID-A</string>
+    <string name="mail_to">dusan.spasojevic@micro-bs.com</string>
+    <string name="mail_sent">Email uspešno poslat!</string>
+    <string name="mail_not_sent">Došlo je do greške pri slanju emaila!</string>
+    <string name="service_file_parse_error">Došlo je do greške pri parsiranju fajla sa adresom servisa. Pokušajte ponovo.</string>
+    <string name="service_file_not_found">Na uredjaju u folderu \"wcf\" ne postoji fajl pod imenom \"serviceAddress.txt\".</string>
+    <string name="incoming_transport">Transport</string>
+    <string name="incoming_warehouse">Magacin</string>
+    <string name="version">Verzija: %1$s</string>
+    <string name="employee_id_invalid">Problem kod dobijanja podataka o prijavljenom korisniku. Napustite aplikaciju i odradite ponovo Login.</string>
+
+    //inventory activity
+    <string name="inventory_expected_date">"Očekivani datum prijema: %1$s"</string>
+    <string name="pre_loading">BARKOD LOKACIJE</string>
+    <string name="leave_inventory">Da li želite da napustite popis?</string>
+    <string name="inventory_overview">Pregled popisa</string>
+    <string name="inventory_send">Slanje popisa</string>
+    <string name="position_not_selected">Morate uneti barkod pozicije!</string>
+    <string name="position_not_found">Uneta pozicija ne postoji u ovom magacinu!</string>
+    <string name="position_first_add">Morate prvo dodati poziciju!</string>
+    <string name="save_current_inventory">SAČUVAJ</string>
+    <string name="temp_list_empty">Prvo dodajte artikle u privremenu listu!</string>
+    <string name="posicion_already">Pozicija je vec izabrana, da li želite da promenite poziciju?</string>
+    <string name="position_not_exist">Pozicija ne postoji u sistemu!</string>
+    <string name="position_not_exist_on_firebase">Pozicija ne postoji u Firebase bazi. Kontaktirajte administratora</string>
+    <string name="barcode_cant_be_scanned">Nije moguće prepoznati barkod!</string>
+    <string name="barcode_dont_match">Skenirani barkod se ne poklapa sa barkodom proizvoda!</string>
+    <string name="position_must_scan">Morate prvo skenirati poziciju!</string>
+    <string name="product_must_scan">Morate izabrati artikal!</string>
+    <string name="quantity_error">Morate uneti količinu veću od 0!</string>
+    //Inventory CurrentList
+    <string name="product_code_lbl">ŠIFRA: %1$s</string>
+    <string name="expiration_date_lbl">ROK: %1$s</string>
+    <string name="lot_lbl">S/N: %1$s</string>
+    <string name="no_temporary_inventory">TRENUTNO NEMATE NIJEDAN POPISAN ARTIKAL</string>
+    <string name="remove_product_from_pos_prompt">Uklonite artikal iz rezultata popisa?</string>
+    <string name="error_firebase_problem">Problem sa internet konekcijom, ili bazom podataka, proverite internet konekciju i pokušajte ponovo!</string>
+
+    //Slanje Inventory
+    <string name="connection_succ_sending_no_product">Nemate nijedan dodat novi artikal!</string>
+    <string name="connection_failed_sending_failed">Proverite internet konekciju, veza sa bazom podataka nije uspostavljena!</string>
+    <string name="connection_succ_sending_inc_failed">Veza je uspostavljena, ali slanje popisa nije uspešno!</string>
+    <string name="incoming_details_check_failed">Dohvatanje rezultata popisa nije uspelo, proverite internet konekciju!</string>
+    <string name="incoming_sending_failed">Nepravilnost prilikom slanja popisa, kontaktirajte administratora!</string>
+    <string name="sent_data_not_updated">Poslate stavke nisu ažurirane, kontaktirajte administratora!</string>
+    <string name="sent_header_not_updated">Poslate stavke su ažurirane, ali status popisa nije promenjen!</string>
+    <string name="sent_result_to_server">Da li želite da pošaljete rezultate popisa na server?</string>
+    <string name="successSendIncoming">Popis uspešno poslat!</string>
+
+    //ProductType Dialog
+    <string name="apply">PRIMENI</string>
+    <string name="choose_product_type">Izaberi tipove proizvoda:</string>
+    <string name="need_to_choose">Morate odabrati barem jedan tip proizvoda!</string>
+    <string name="pick_article">Izaberite proizvod</string>
+    <string name="close">ZATVORI</string>
+    <string name="repacking_header_description">RADITE PREPAKIVANJE ARTIKALA</string>
+    <string name="from_position">SA POZICIJE</string>
+    <string name="to_position">NA POZICIJU</string>
+    <string name="repacking_article">Prepakivanje artikala</string>
+    <string name="error_getting_pos_from_fb">Došlo je do greške prilikom dobijanja pozicije sa Firebase baze. Pokušajte ponovo.</string>
+    <string name="error_wsp_details_dont_exist">Došlo je do greške. Lista sa artiklima na poziciji ne postoji. Napustite formu i pokušajte ponovo.</string>
+
+
+</resources>

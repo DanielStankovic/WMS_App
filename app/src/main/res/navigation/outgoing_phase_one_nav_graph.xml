@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outgoing_nav_graph"
+    app:startDestination="@id/outgoingPhaseOneDefaultFragment">
+
+    <fragment
+        android:id="@+id/outgoingPhaseOneDefaultFragment"
+        android:name="com.example.wms_app.fragment.outgoing.phaseone.OutgoingPhaseOneDefaultFragment"
+        android:label="@string/outgoing_phase_one"
+        tools:layout="@layout/fragment_outgoing_phase_one_default">
+
+        <argument
+            android:name="SelectedOutgoing"
+            android:defaultValue="@null"
+            app:argType="com.microbs.kolibriwms_matis.model.Outgoing"
+            app:nullable="true" />
+        <argument
+            android:name="SelectedOutgoingGrouped"
+            android:defaultValue="@null"
+            app:argType="com.microbs.kolibriwms_matis.model.OutgoingGrouped"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/outgoingPhaseOneTempListFragment"
+        android:name="com.example.wms_app.fragment.outgoing.phaseone.OutgoingPhaseOneTempListFragment"
+        android:label="@string/temp_list"
+        tools:layout="@layout/fragment_outgoing_phase_one_temp_list" />
+    <fragment
+        android:id="@+id/outgoingPhaseOnePrealoadingFragment"
+        android:name="com.example.wms_app.fragment.outgoing.phaseone.OutgoingPhaseOnePreloadingFragment"
+        android:label="@string/position_for_preloading_lbl"
+        tools:layout="@layout/fragment_outgoing_phase_one_prealoading" />
+    <fragment
+        android:id="@+id/outgoingPhaseOnePreviewFragment"
+        android:name="com.example.wms_app.fragment.outgoing.phaseone.OutgoingPhaseOnePreviewFragment"
+        android:label="@string/outgoing_preview"
+        tools:layout="@layout/fragment_outgoing_phase_one_preview" />
+
+
+</navigation>

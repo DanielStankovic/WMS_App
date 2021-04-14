@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/incoming_nav_graph"
+    app:startDestination="@id/singleIncomingDefaultFragment">
+
+    <fragment
+        android:id="@+id/singleIncomingDefaultFragment"
+        android:name="com.example.wms_app.fragment.incoming.standard.IncomingDefaultFragment"
+        android:label="Prijem"
+        tools:layout="@layout/fragment_single_incoming_default">
+        <argument
+            android:name="SelectedIncoming"
+            app:argType="com.microbs.kolibriwms_matis.model.Incoming" />
+        <action
+            android:id="@+id/action_singleIncomingDefaultFragment_to_incomingOverviewDoneFragment2"
+            app:destination="@id/incomingOverviewDoneFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/incomingTransportFragment"
+        android:name="com.example.wms_app.fragment.incoming.standard.IncomingTransportFragment"
+        android:label="@string/transport"
+        tools:layout="@layout/fragment_incoming_transport" />
+    <fragment
+        android:id="@+id/incomingOverviewFragment"
+        android:name="com.example.wms_app.fragment.incoming.standard.IncomingOverviewFragment"
+        android:label="@string/incoming_overview"
+        tools:layout="@layout/fragment_incoming_overview" />
+    <fragment
+        android:id="@+id/incomingTempListPreviewFragment"
+        android:name="com.example.wms_app.fragment.incoming.standard.IncomingTempListPreviewFragment"
+        android:label="@string/temp_list"
+        tools:layout="@layout/fragment_incoming_temp_list_preview" />
+    <fragment
+        android:id="@+id/incomingOverviewDoneFragment"
+        android:name="com.example.wms_app.fragment.incoming.standard.IncomingOverviewDoneFragment"
+        android:label="fragment_incoming_overview_done"
+        tools:layout="@layout/fragment_incoming_overview_done" />
+</navigation>

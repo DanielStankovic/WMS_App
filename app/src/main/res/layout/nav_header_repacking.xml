@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_repacking_bw"
+        android:layout_gravity="start"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        app:tint="@color/white"
+        android:cropToPadding="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/incomingDateTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="25.03.2020."
+            android:gravity="start"
+            android:visibility="invisible"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:textSize="12sp">
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/incomingCodeTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:text="@string/repacking_header_description"
+            android:textColor="@color/white"
+            android:textSize="16sp">
+
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/incomingDescriptionTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ovo je primer otpreme"
+            android:gravity="start"
+            android:textStyle="italic"
+            android:visibility="invisible"
+
+            android:textColor="@color/white"
+            android:textSize="12sp">
+
+
+        </TextView>
+    </LinearLayout>
+
+
+</LinearLayout>

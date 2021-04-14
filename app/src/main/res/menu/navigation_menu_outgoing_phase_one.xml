@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/outgoingPhaseOneCurrList"
+            android:icon="@drawable/ic_scan"
+            android:title="@string/temp_list" />
+
+        <item
+            android:id="@+id/outgoingPhaseOneForPreList"
+            android:icon="@drawable/ic_forklift"
+            android:title="@string/position_for_preloading_lbl" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_middle"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/outgoingPhaseOnePreview"
+            android:icon="@drawable/ic_preview"
+            android:title="@string/outgoing_overview" />
+    </group>
+
+</menu>

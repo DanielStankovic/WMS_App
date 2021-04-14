@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/spinnerRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/spinnerProdNameTv"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:background="?android:attr/listChoiceBackgroundIndicator"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxEms="30"
+        android:maxLines="2"
+        android:textSize="13sp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textAppearance="?android:attr/textAppearanceListItem" />
+
+    <View
+        android:id="@+id/spinnerSeparatorLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/spinnerProdNameTv"
+        android:background="@color/colorPrimaryDark" />
+
+</RelativeLayout>

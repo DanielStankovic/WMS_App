@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/incoming_production_nav_graph"
+    app:startDestination="@id/incomingProductionDefaultFragment">
+    <fragment
+        android:id="@+id/incomingProductionDefaultFragment"
+        android:name="com.example.wms_app.fragment.incoming.production.IncomingProductionDefaultFragment"
+        android:label="@string/incoming_production_lbl"
+        tools:layout="@layout/fragment_incoming_production_default">
+        <argument
+            android:name="SelectedProductionTypeTag"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/incomingProductionTranposrtFragment"
+        android:name="com.example.wms_app.fragment.incoming.production.IncomingProductionTranposrtFragment"
+        android:label="@string/transport"
+        tools:layout="@layout/fragment_incoming_production_tranposrt" />
+    <fragment
+        android:id="@+id/incomingProductionOverviewFragment"
+        android:name="com.example.wms_app.fragment.incoming.production.IncomingProductionOverviewFragment"
+        android:label="@string/incoming_overview"
+        tools:layout="@layout/fragment_incoming_production_overview" />
+    <fragment
+        android:id="@+id/incomingProductionTempListFragment"
+        android:name="com.example.wms_app.fragment.incoming.production.IncomingProductionTempListFragment"
+        android:label="@string/temp_list"
+        tools:layout="@layout/fragment_incoming_production_temp_list" />
+</navigation>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/outgoing_phase_two_nav_graph"
+    app:startDestination="@id/outgoingPhaseTwoDefaultFragment">
+
+    <fragment
+        android:id="@+id/outgoingPhaseTwoDefaultFragment"
+        android:name="com.example.wms_app.fragment.outgoing.phasetwo.OutgoingPhaseTwoDefaultFragment"
+        android:label="@string/outgoing_phase_two"
+        tools:layout="@layout/fragment_outgoing_phase_two_default">
+        <action
+            android:id="@+id/action_outgoingPhaseTwoDefaultFragment_to_outgoingPhaseTwoPrevDoneFragment"
+            app:destination="@id/outgoingPhaseTwoPrevDoneFragment" />
+        <argument
+            android:name="SelectedOutgoing"
+            android:defaultValue="@null"
+            app:argType="com.microbs.kolibriwms_matis.model.Outgoing"
+            app:nullable="true" />
+        <argument
+            android:name="SelectedOutgoingGrouped"
+            android:defaultValue="@null"
+            app:argType="com.microbs.kolibriwms_matis.model.OutgoingGrouped"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/outgoingPhaseTwoTempListFragment"
+        android:name="com.example.wms_app.fragment.outgoing.phasetwo.OutgoingPhaseTwoTempListFragment"
+        android:label="@string/temp_list"
+        tools:layout="@layout/fragment_outgoing_phase_two_temp_list" />
+    <fragment
+        android:id="@+id/outgoingPhaseTwoTransportFragment"
+        android:name="com.example.wms_app.fragment.outgoing.phasetwo.OutgoingPhaseTwoTransportFragment"
+        android:label="@string/transport"
+        tools:layout="@layout/fragment_outgoing_phase_two_transport" />
+    <fragment
+        android:id="@+id/outgoingPhaseTwoPreviewFragment"
+        android:name="com.example.wms_app.fragment.outgoing.phasetwo.OutgoingPhaseTwoPreviewFragment"
+        android:label="@string/outgoing_preview"
+        tools:layout="@layout/fragment_outgoing_phase_two_preview" />
+    <fragment
+        android:id="@+id/outgoingPhaseTwoPrevDoneFragment"
+        android:name="com.example.wms_app.fragment.outgoing.phasetwo.OutgoingPhaseTwoPrevDoneFragment"
+        android:label="fragment_outgoing_phase_two_prev_done"
+        tools:layout="@layout/fragment_outgoing_phase_two_prev_done" />
+</navigation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/addTruck"
+            android:icon="@drawable/ic_truck_menu"
+            android:title="@string/transport" />
+
+        <item
+            android:id="@+id/tempList"
+            android:icon="@drawable/ic_scan"
+            android:title="@string/temp_list" />
+
+    </group>
+
+    <group
+        android:id="@+id/menu_middle"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/outgoingOverview"
+            android:icon="@drawable/ic_preview"
+            android:title="@string/outgoing_overview" />
+    </group>
+
+    <group
+        android:id="@+id/menu_end"
+        android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/outgoingSend"
+            android:icon="@drawable/ic_send"
+            android:title="@string/send_outgoing" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.outgoing.phasetwo.OutgoingPhaseTwoDefaultFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.pawelkleczkowski.customgauge.CustomGauge
+            android:id="@+id/productNumberGaugeView"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="1dp"
+            app:gaugePointEndColor="@color/colorAccentDark"
+            app:gaugePointStartColor="@color/colorAccent"
+            app:gaugeStartAngle="135"
+            app:gaugeStartValue="0"
+            app:gaugeStrokeCap="ROUND"
+            app:gaugeStrokeColor="@color/grey"
+            app:gaugeStrokeWidth="10dp"
+            app:gaugeSweepAngle="270"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/selectedProductsShort"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="@+id/productNumberGaugeView"
+            app:layout_constraintStart_toStartOf="@+id/productNumberGaugeView"
+            app:layout_constraintTop_toBottomOf="@+id/productNumberGaugeView" />
+
+        <ImageView
+            android:id="@+id/outgoingPhaseTwoCancelCurrentPickup"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/ic_cancel_state_drawable"
+            android:clickable="true"
+            android:importantForAccessibility="no"
+            app:layout_constraintEnd_toStartOf="@+id/productNumberGaugeView"
+            app:layout_constraintTop_toTopOf="@+id/productNumberGaugeView" />
+
+        <ImageView
+            android:id="@+id/outgoingPhaseTwoUndoLastPickup"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:clickable="true"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_undo_state_drawable"
+            app:layout_constraintBottom_toBottomOf="@+id/productNumberGaugeView"
+            app:layout_constraintEnd_toStartOf="@+id/productNumberGaugeView" />
+
+
+        <TextView
+            android:id="@+id/outgoingPhaseTwoProdCounterTv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:maxLines="1"
+            tools:text="500/500"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="italic"
+            app:autoSizeMaxTextSize="20sp"
+            app:autoSizeMinTextSize="8sp"
+            app:autoSizeStepGranularity="1sp"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toBottomOf="@+id/productNumberGaugeView"
+            app:layout_constraintEnd_toEndOf="@+id/productNumberGaugeView"
+            app:layout_constraintStart_toStartOf="@+id/productNumberGaugeView"
+            app:layout_constraintTop_toTopOf="@+id/productNumberGaugeView" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="8dp"
+            app:cardElevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.example.wms_app.utilities.CustomSearchableSpinner
+                    android:id="@+id/outgoingPhaseTwoProdSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/outgoingPhaseTwoSrNumberEt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ems="10"
+                    android:hint="@string/sr_number_hint"
+                    android:inputType="text"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toStartOf="@+id/outgoingPhaseTwoQtyEt"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintHorizontal_weight="2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/outgoingPhaseTwoProdSpinner" />
+
+                <EditText
+                    android:id="@+id/outgoingPhaseTwoQtyEt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:inputType="number"
+                    app:layout_constraintEnd_toStartOf="@+id/outgoingPhaseTwoLeftQtyEt"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_weight="0.8"
+                    app:layout_constraintStart_toEndOf="@+id/outgoingPhaseTwoSrNumberEt"
+                    app:layout_constraintTop_toBottomOf="@+id/outgoingPhaseTwoProdSpinner"
+                    tools:text="1" />
+
+                <EditText
+                    android:id="@+id/outgoingPhaseTwoLeftQtyEt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:inputType="text"
+                    app:autoSizeMaxTextSize="24sp"
+                    app:autoSizeMinTextSize="8sp"
+                    app:autoSizeStepGranularity="2sp"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintStart_toEndOf="@+id/outgoingPhaseTwoQtyEt"
+                    app:layout_constraintTop_toBottomOf="@+id/outgoingPhaseTwoProdSpinner" />
+
+                <Button
+                    android:id="@+id/outgoingPhaseTwoAddNoSrNumBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/add_prod_no_sr_num"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/outgoingPhaseTwoAddProdBtn"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/outgoingPhaseTwoSrNumberEt" />
+
+                <Button
+                    android:id="@+id/outgoingPhaseTwoAddProdBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/add_product"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/outgoingPhaseTwoAddNoSrNumBtn"
+                    app:layout_constraintTop_toBottomOf="@+id/outgoingPhaseTwoSrNumberEt" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            app:cardElevation="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textInputLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="6dp"
+                    app:boxStrokeColor="@color/colorAccent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/outgoingPhaseTwoSetPosBtn"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/outgoingPhaseTwoPosEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:hint="@string/position_hint"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/outgoingPhaseTwoSetPosBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:text="@string/btn_position"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/textInputLayout"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/truckImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="25dp"
+            android:scaleType="fitXY"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_truck_black_white"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toStartOf="@+id/outgoingPhaseTwoCancelCurrentPickup"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+        <TextView
+            android:id="@+id/truckLblTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/truck_not_selected"
+            android:textColor="@color/colorPrimary"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/truckImageView"
+            app:layout_constraintStart_toStartOf="@+id/truckImageView"
+            app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+        <Button
+            android:id="@+id/outgoingPhaseTwoLoadBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

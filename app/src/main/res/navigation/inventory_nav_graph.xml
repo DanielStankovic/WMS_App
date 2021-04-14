@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/inventory_nav_graph"
+    app:startDestination="@id/inventoryDefaultFragment">
+
+    <fragment
+        android:id="@+id/inventoryDefaultFragment"
+        android:name="com.example.wms_app.fragment.inventory.InventoryDefaultFragment"
+        android:label="Popis artikala"
+        tools:layout="@layout/fragment_inventory_default" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/inventoryTempList"
+        android:name="com.example.wms_app.fragment.inventory.InventoryCurrentListFragment"
+        android:label="@string/temp_list"
+        tools:layout="@layout/fragment_inventory_current_list" />
+    <fragment
+        android:id="@+id/inventoryOverviewFragment"
+        android:name="com.example.wms_app.fragment.inventory.InventoryDoneFragment"
+        android:label="@string/inventory_overview"
+        tools:layout="@layout/fragment_inventory_done" />
+</navigation>

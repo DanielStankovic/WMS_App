@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/repacking_nav_graph"
+    app:startDestination="@id/repackingDefaultFragment">
+
+    <fragment
+        android:id="@+id/repackingDefaultFragment"
+        android:name="com.example.wms_app.fragment.repacking.RepackingDefaultFragment"
+        android:label="@string/repacking_article"
+        tools:layout="@layout/fragment_repacking_default" />
+    <fragment
+        android:id="@+id/repackingTempListFragment"
+        android:name="com.example.wms_app.fragment.repacking.RepackingTempListFragment"
+        android:label="@string/temp_list"
+        tools:layout="@layout/fragment_repacking_temp_list" />
+</navigation>
