@@ -13,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiClient {
 
-    public static String SERVICE_ADDRESS = "http://89.216.113.44:8228/";
+    public static String SERVICE_ADDRESS = "ADDRESS GOES HERE";
 
     private final static String SERVICE_URI = SERVICE_ADDRESS + "KolibriService.svc/";
 
